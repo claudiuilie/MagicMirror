@@ -20,14 +20,14 @@ Module.register("newsfeed",{
 		],
 		showSourceTitle: true,
 		showPublishDate: true,
-		showDescription: false,
+		showDescription: true,
 		wrapTitle: true,
 		wrapDescription: true,
 		truncDescription: true,
 		lengthDescription: 400,
 		hideLoading: false,
 		reloadInterval: 5 * 60 * 1000, // every 5 minutes
-		updateInterval: 10 * 1000,
+		updateInterval: 20 * 1000,
 		animationSpeed: 2.5 * 1000,
 		maxNewsItems: 0, // 0 for unlimited
 		ignoreOldItems: false,
