@@ -15,7 +15,7 @@ Module.register("weatherforecast",{
 		locationID: false,
 		appid: "",
 		units: config.units,
-		maxNumberOfDays: 8,
+		maxNumberOfDays: 7,
 		showRainAmount: false,
 		updateInterval: 10 * 60 * 1000, // every 10 minutes
 		animationSpeed: 1000,
@@ -38,7 +38,7 @@ Module.register("weatherforecast",{
 		calendarClass: "calendar",
 		tableClass: "small",
 
-		roundTemp: false,
+		roundTemp: true,
 
 		iconTable: {
 			"01d": "wi-day-sunny",
