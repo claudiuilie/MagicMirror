@@ -63,7 +63,7 @@ modules: [
             key: "AIzaSyBEbAhBQYMul4rmpONye8UNJJsYltbTHXM",
             directionsRequest:{
                 origin: "44.385886,26.010775",
-                destination: "44.4894392,26.1228509"
+                destination: "44.489606,26.126148"
             }
         }
     },
