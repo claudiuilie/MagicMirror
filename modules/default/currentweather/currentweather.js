@@ -11,22 +11,22 @@ Module.register("currentweather",{
 
 	// Default module config.
 	defaults: {
-		location: false,
+		location: true,
 		locationID: false,
 		appid: "",
 		units: config.units,
 		updateInterval: 10 * 60 * 1000, // every 10 minutes
 		animationSpeed: 1000,
 		timeFormat: config.timeFormat,
-		showPeriod: true,
+		showPeriod: false,
 		showPeriodUpper: false,
 		showWindDirection: true,
 		showWindDirectionAsArrow: false,
-		useBeaufort: true,
-		useKMPHwind: false,
+		useBeaufort: false,
+		useKMPHwind: true,
 		lang: config.language,
 		decimalSymbol: ".",
-		showHumidity: false,
+		showHumidity: true,
 		degreeLabel: false,
 		showIndoorTemperature: false,
 		showIndoorHumidity: false,
@@ -43,7 +43,7 @@ Module.register("currentweather",{
 		calendarClass: "calendar",
 
 		onlyTemp: false,
-		roundTemp: false,
+		roundTemp: true,
 
 		iconTable: {
 			"01d": "wi-day-sunny",
