@@ -28,7 +28,7 @@ units: "metric",
 electronOptions: {
     fullscreen: false,
     width: 800,
-    height: 600
+    height: 1000
 },
 
 modules: [
@@ -56,6 +56,18 @@ modules: [
             ]
         }
     },
+    {
+        module: "MMM-google-route",
+        position: "top_left",
+        config: {
+            key: "AIzaSyBEbAhBQYMul4rmpONye8UNJJsYltbTHXM",
+            directionsRequest:{
+                origin: "44.385886,26.010775",
+                destination: "44.4894392,26.1228509"
+            }
+        }
+    },
+
     // {
     //     module: "compliments",
     //     position: "lower_third"
@@ -103,6 +115,7 @@ modules: [
             showPublishDate: true
         }
     },
+    
 ]
 
 };
