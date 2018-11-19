@@ -108,22 +108,15 @@ var config = {
             }
         },
         {
-            module: 'MMM-syslog',
-            position: 'top_right',
+            module: "MMM-EmbedYoutube", // Path to youtube module from modules folder Exmaple: MagicMirror/modules/custom/MMM-EmbedYoutube/ so it's custom/MMM-EmbedYoutube
+            position: "bottom_center",	// This can be any of the regions.
             config: {
-               max:10
+                // See 'Configuration options' in README.md for more information.
+                video_id: "",
+                playlist: "PLXJDMCh2ji3IIaZLXcPePQPab6uecMn5G",
+                autoplay: true
             }
         },
-        // {
-        //     module: "MMM-EmbedYoutube", // Path to youtube module from modules folder Exmaple: MagicMirror/modules/custom/MMM-EmbedYoutube/ so it's custom/MMM-EmbedYoutube
-        //     position: "bottom_center",	// This can be any of the regions.
-        //     config: {
-        //         // See 'Configuration options' in README.md for more information.
-        //         video_id: "",
-        //         playlist: "PLXJDMCh2ji3IIaZLXcPePQPab6uecMn5G",
-        //         autoplay: true
-        //     }
-        // },
         {
             module: "newsfeed",
             position: "bottom_bar",
