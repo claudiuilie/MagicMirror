@@ -36,6 +36,10 @@ var config = {
             module: "alert",
         },
         {
+            module: "helloworld",
+            position: "top_center"
+        },
+        {
             module: "updatenotification",
             position: "top_bar"
         },
