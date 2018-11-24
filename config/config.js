@@ -37,11 +37,13 @@ var config = {
         },
         {
             module: "updatenotification",
-            position: "top_bar"
+            position: "top_bar",
+            
         },
        {
             module: "MMM-Arduino-Control",
-            position: "bottom_left"
+            position: "bottom_left",
+            header: "Home Status"
         },
         {
             module: "clock",
