@@ -36,12 +36,12 @@ var config = {
             module: "alert",
         },
         {
-            module: "helloworld",
-            position: "top_center"
-        },
-        {
             module: "updatenotification",
             position: "top_bar"
+        },
+       {
+            module: "MMM-Arduino-Control",
+            position: "bottom_left"
         },
         {
             module: "clock",
@@ -77,11 +77,6 @@ var config = {
                 }
             }
         },
-
-        // {
-        //     module: "compliments",
-        //     position: "lower_third"
-        // },
         {
             module: "currentweather",
             position: "top_right",
@@ -118,16 +113,6 @@ var config = {
                max:10
             }
         },
-        // {
-        //     module: "MMM-EmbedYoutube", // Path to youtube module from modules folder Exmaple: MagicMirror/modules/custom/MMM-EmbedYoutube/ so it's custom/MMM-EmbedYoutube
-        //     position: "bottom_center",	// This can be any of the regions.
-        //     config: {
-        //         // See 'Configuration options' in README.md for more information.
-        //         video_id: "",
-        //         playlist: "PLXJDMCh2ji3IIaZLXcPePQPab6uecMn5G",
-        //         autoplay: true
-        //     }
-        // },
         {
             module: "newsfeed",
             position: "bottom_bar",
