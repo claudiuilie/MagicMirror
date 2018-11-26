@@ -40,11 +40,6 @@ var config = {
             position: "top_bar",
             
         },
-       {
-            module: "MMM-Arduino-Control",
-            position: "bottom_left",
-            header: "Home Status"
-        },
         {
             module: "clock",
             position: "top_left"
@@ -109,10 +104,15 @@ var config = {
             }
         },
         {
+            module: "MMM-Arduino-Control",
+            position: "top_right",
+            header: "Home Status"
+        },
+        {
             module: 'MMM-syslog',
-            position: 'top_right',
+            position: 'bottom_left',
             config: {
-               max:10
+               max:5
             }
         },
         {
