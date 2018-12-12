@@ -38,12 +38,48 @@ var config = {
         {
             module: "updatenotification",
             position: "top_bar",
+
+        },
+        {
+            module: "MMM-AssistantMk2",
+            position: "bottom_center",
+            config: {
+
+                // --- ESSENTIALS / modifying for your environment might be needed.
             
+            
+                deviceLocation: {
+                  coordinates: { // set the latitude and longitude of the device to get localized information like weather or time. (ref. mygeoposition.com)
+                    latitude: 44.385886, // -90.0 - +90.0
+                    longitude: 26.010775, // -180.0 - +180.0
+                  },
+                }
+            }
+        },
+        {
+            module: "MMM-Hotword",
+            config: {
+                record: {
+                    recordProgram: "arecord"
+                },
+                autostart: true,
+                autorestart: true,
+                onDetected: {
+                    notification: (payload) => {
+                        return "ASSISTANT_ACTIVATE"
+                    },
+                    payload: (payload) => {
+                        return {
+                            profile: payload.hotword
+                        }
+                    }
+                },
+            },
         },
         {
             module: "MMM-MovieListings",
             position: "top_center",
-            
+
         },
         {
             module: "clock",
@@ -117,7 +153,7 @@ var config = {
             module: 'MMM-syslog',
             position: 'bottom_left',
             config: {
-               max:5
+                max: 5
             }
         },
         {
