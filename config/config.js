@@ -41,6 +41,11 @@ var config = {
             
         },
         {
+            module: "MMM-MovieListings",
+            position: "top_center",
+            
+        },
+        {
             module: "clock",
             position: "top_left"
         },
