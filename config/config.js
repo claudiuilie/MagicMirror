@@ -10,18 +10,9 @@
 */
 
 var config = {
-    address: "0.0.0.0", // Address to listen on, can be:
-    // - "localhost", "127.0.0.1", "::1" to listen on loopback interface
-    // - another specific IPv4/6 to listen on a specific interface
-    // - "", "0.0.0.0", "::" to listen on any interface
-    // Default, when address config is left out, is "localhost"
+    address: "0.0.0.0",
     port: 8080,
-    ipWhitelist: [], // Set [] to allow all IP addresses
-    // or add a specific IPv4 of 192.168.1.5 :
-    // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.5"],
-    // or IPv4 range of 192.168.3.0 --> 192.168.3.15 use CIDR format :
-    // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.3.0/28"],
-
+    ipWhitelist: [],
     language: "en",
     timeFormat: 24,
     units: "metric",
@@ -45,9 +36,9 @@ var config = {
             position: "bottom_center",
             config: {
                 deviceLocation: {
-                  coordinates: { // set the latitude and longitude of the device to get localized information like weather or time. (ref. mygeoposition.com)
-                    latitude: 44.385886, // -90.0 - +90.0
-                    longitude: 26.010775, // -180.0 - +180.0
+                  coordinates: { 
+                    latitude: 44.385886, 
+                    longitude: 26.010775,
                   },
                 }
             }
@@ -83,9 +74,7 @@ var config = {
         },
         {
             module: 'MMM-Remote-Control',
-            // uncomment the following line to show the URL of the remote control on the mirror
             position: 'bottom_left'
-            // you can hide this module afterwards from the remote control itself
         },
         {
             module: "calendar",
@@ -116,16 +105,15 @@ var config = {
             position: "top_right",
             config: {
                 location: "Bucharest",
-                locationID: "",  //ID from http://bulk.openweathermap.org/sample/; unzip the gz file and find your city
+                locationID: "",
                 appid: "cd86b6b78b174125bfddf3cc26d7105a"
             }
         },
         {
             module: 'MMM-darksky-hourly',
-            position: 'top_right',  // This can be any of the regions.
+            position: 'top_right',
             config: {
-                // See 'Configuration options' for more information.
-                apiKey: 'e9ea011fbb954b99670e297125a27a84', // Dark Sky API key.
+                apiKey: 'e9ea011fbb954b99670e297125a27a84', 
                 latitude: 44.3816,
                 longitude: 25.9957
             }
@@ -136,7 +124,7 @@ var config = {
             header: "Weather Forecast",
             config: {
                 location: "Bucharest",
-                locationID: "",  //ID from http://www.openweathermap.org/help/city_list.txt
+                locationID: "",
                 appid: "cd86b6b78b174125bfddf3cc26d7105a"
             }
         },
