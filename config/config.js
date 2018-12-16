@@ -64,28 +64,6 @@ var config = {
             },
         },
         {
-            module: 'internet-monitor',
-                position: 'top_center',
-                header: 'Internet Monitor',
-                config:{
-                    type: 'minimal',
-                    maxTime: 20000,
-                    updateInterval: 0,
-                    verbose: false,
-                    displayStrength: true,
-                    displaySpeed: false,
-                    strengthIconSize: 80,
-                    maxGaugeScale: 100,
-            wifiSymbol:{
-                        size: 50,
-                        fullColor: '#3afc25',
-                        almostColor: '#ffff0c',
-                        halfColor: '#ff8c00',
-                    noneColor: '#ff1111'
-            },
-                },
-        },
-        {
             module: "MMM-MovieListings",
             position: "top_center",
 
