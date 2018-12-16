@@ -44,10 +44,6 @@ var config = {
             module: "MMM-AssistantMk2",
             position: "bottom_center",
             config: {
-
-                // --- ESSENTIALS / modifying for your environment might be needed.
-            
-            
                 deviceLocation: {
                   coordinates: { // set the latitude and longitude of the device to get localized information like weather or time. (ref. mygeoposition.com)
                     latitude: 44.385886, // -90.0 - +90.0
