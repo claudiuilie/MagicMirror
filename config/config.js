@@ -33,7 +33,7 @@ var config = {
         },
         {
             module: "MMM-AssistantMk2",
-            position: "bottom_center",
+            position: "bottom_bar",
             config: {
                 deviceLocation: {
                   coordinates: { 
