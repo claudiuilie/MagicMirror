@@ -16,11 +16,11 @@ var config = {
     language: "en",
     timeFormat: 24,
     units: "metric",
-    electronOptions: {
-        fullscreen: false,
-        width: 800,
-        height: 1000
-    },
+    // electronOptions: {
+    //     fullscreen: false,
+    //     width: 800,
+    //     height: 1000
+    // },
 
     modules: [
         {
