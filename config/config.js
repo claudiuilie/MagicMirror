@@ -31,31 +31,72 @@ var config = {
             position: "top_bar",
 
         },
+        // {
+        //     module: "MMM-AssistantMk2",
+        //     position: "bottom_bar",
+        //     config: {
+        //         deviceLocation: {
+        //           coordinates: { 
+        //             latitude: 44.385886, 
+        //             longitude: 26.010775,
+        //           },
+        //         }
+        //     }
+        // },
+        // {
+        //     module: "MMM-Hotword",
+        //     config: {
+        //         record: {
+        //             recordProgram: "arecord"
+        //         },
+        //         autostart: true,
+        //         autorestart: true,
+        //         onDetected: {
+        //             notification: (payload) => {
+        //                 return "ASSISTANT_ACTIVATE"
+        //             },
+        //             payload: (payload) => {
+        //                 return {
+        //                     profile: payload.hotword
+        //                 }
+        //             }
+        //         },
+        //     },
+        // },
         {
             module: "MMM-AssistantMk2",
             position: "bottom_bar",
             config: {
                 deviceLocation: {
-                  coordinates: { 
-                    latitude: 44.385886, 
-                    longitude: 26.010775,
-                  },
-                }
+                    coordinates: {
+                        latitude: 44.385886,
+                        longitude: 26.010775,
+                    }
+                },
+                record: {
+                    recordProgram: "arecord",
+                    device: "plughw:1",
+                },
+
+                notifications: {
+                    ASSISTANT_ACTIVATED: "HOTWORD_PAUSE",
+                    ASSISTANT_DEACTIVATED: "HOTWORD_RESUME",
+                },
             }
         },
         {
             module: "MMM-Hotword",
             config: {
                 record: {
-                    recordProgram: "arecord"
+                    recordProgram: "arecord",
+                    device: "plughw:1",
                 },
                 autostart: true,
-                autorestart: true,
                 onDetected: {
-                    notification: (payload) => {
+                    notification: function (payload) {
                         return "ASSISTANT_ACTIVATE"
                     },
-                    payload: (payload) => {
+                    payload: function (payload) {
                         return {
                             profile: payload.hotword
                         }
@@ -113,7 +154,7 @@ var config = {
             module: 'MMM-darksky-hourly',
             position: 'top_right',
             config: {
-                apiKey: 'e9ea011fbb954b99670e297125a27a84', 
+                apiKey: 'e9ea011fbb954b99670e297125a27a84',
                 latitude: 44.3816,
                 longitude: 25.9957
             }
