@@ -31,33 +31,16 @@ var config = {
             position: "top_bar",
 
         },
-        // {
-        //     module: "MMM-AssistantMk2",
-        //     position: "bottom_bar",
-        //     config: {
-        //         deviceLocation: {
-        //           coordinates: { 
-        //             latitude: 44.385886, 
-        //             longitude: 26.010775,
-        //           },
-        //         }
-        //     }
-        // },
-
         {
             module: "MMM-AssistantMk2",
             position: "bottom_bar",
             config: {
                 deviceLocation: {
-                    coordinates: {
-                        latitude: 44.385886,
-                        longitude: 26.010775,
-                    }
-                },
-                notifications: {
-                    ASSISTANT_ACTIVATED: "HOTWORD_PAUSE",
-                    ASSISTANT_DEACTIVATED: "HOTWORD_RESUME",
-                },
+                  coordinates: { 
+                    latitude: 44.385886, 
+                    longitude: 26.010775,
+                  },
+                }
             }
         },
         {
