@@ -43,26 +43,7 @@ var config = {
         //         }
         //     }
         // },
-        // {
-        //     module: "MMM-Hotword",
-        //     config: {
-        //         record: {
-        //             recordProgram: "arecord"
-        //         },
-        //         autostart: true,
-        //         autorestart: true,
-        //         onDetected: {
-        //             notification: (payload) => {
-        //                 return "ASSISTANT_ACTIVATE"
-        //             },
-        //             payload: (payload) => {
-        //                 return {
-        //                     profile: payload.hotword
-        //                 }
-        //             }
-        //         },
-        //     },
-        // },
+
         {
             module: "MMM-AssistantMk2",
             position: "bottom_bar",
@@ -73,11 +54,6 @@ var config = {
                         longitude: 26.010775,
                     }
                 },
-                record: {
-                    recordProgram: "arecord",
-                    device: "plughw:1",
-                },
-
                 notifications: {
                     ASSISTANT_ACTIVATED: "HOTWORD_PAUSE",
                     ASSISTANT_DEACTIVATED: "HOTWORD_RESUME",
@@ -88,15 +64,15 @@ var config = {
             module: "MMM-Hotword",
             config: {
                 record: {
-                    recordProgram: "arecord",
-                    device: "plughw:1",
+                    recordProgram: "arecord"
                 },
                 autostart: true,
+                autorestart: true,
                 onDetected: {
-                    notification: function (payload) {
+                    notification: (payload) => {
                         return "ASSISTANT_ACTIVATE"
                     },
-                    payload: function (payload) {
+                    payload: (payload) => {
                         return {
                             profile: payload.hotword
                         }
