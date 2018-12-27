@@ -95,6 +95,7 @@ var config = {
         },
         {
             module: 'MMM-Tools',
+            header: 'System Status',
             position: 'bottom_left',
             config: {
               device : "ATB", // "RPI" is also available
