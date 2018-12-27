@@ -94,6 +94,23 @@ var config = {
             }
         },
         {
+            module: 'MMM-Tools',
+            position: 'bottom_left',
+            config: {
+              device : "ATB", // "RPI" is also available
+              refresh_interval_ms : 10000,
+              warning_interval_ms : 1000 * 60 * 5,
+              enable_warning : false,
+              warning : {
+                CPU_TEMPERATURE : 80,
+                GPU_TEMPERATURE : 80,
+                CPU_USAGE : 90,
+                STORAGE_USED_PERCENT : 80,
+                MEMORY_USED_PERCENT : 80
+              }
+            }
+          },
+        {
             module: "MMM-google-route",
             position: "top_left",
             config: {
