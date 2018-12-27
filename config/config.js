@@ -36,11 +36,15 @@ var config = {
             position: "bottom_bar",
             config: {
                 deviceLocation: {
-                  coordinates: { 
-                    latitude: 44.385886, 
-                    longitude: 26.010775,
-                  },
-                }
+                    coordinates: {
+                        latitude: 44.385886,
+                        longitude: 26.010775,
+                    },
+                },
+                notifications: {
+                    ASSISTANT_ACTIVATED: "HOTWORD_PAUSE",
+                    ASSISTANT_DEACTIVATED: "HOTWORD_RESUME",
+                },
             }
         },
         {
@@ -50,7 +54,7 @@ var config = {
                     recordProgram: "arecord"
                 },
                 autostart: true,
-                autorestart: true,
+                autorestart: false,
                 onDetected: {
                     notification: (payload) => {
                         return "ASSISTANT_ACTIVATE"
