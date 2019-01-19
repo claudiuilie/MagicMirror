@@ -88,7 +88,7 @@ var config = {
                 calendars: [
                     {
                         symbol: "far fa-calendar-check",
-                        url: "https://www.kayaposoft.com/enrico/ics/v2.0/?country=rou&fromDate=01-01-2018&toDate=31-12-2018&region=&holidayType=public_holiday&lang=ro"
+                        url: "https://www.kayaposoft.com/enrico/ics/v2.0/?country=rou&fromDate=01-01-2019&toDate=31-12-2019&region=&holidayType=public_holiday&lang=ro"
                     }
                 ]
             }
