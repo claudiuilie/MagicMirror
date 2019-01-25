@@ -97,19 +97,19 @@ var config = {
             header: 'System Status',
             position: 'bottom_left',
             config: {
-              device : "ATB", // "RPI" is also available
-              refresh_interval_ms : 10000,
-              warning_interval_ms : 1000 * 60 * 5,
-              enable_warning : false,
-              warning : {
-                CPU_TEMPERATURE : 80,
-                GPU_TEMPERATURE : 80,
-                CPU_USAGE : 90,
-                STORAGE_USED_PERCENT : 80,
-                MEMORY_USED_PERCENT : 80
-              }
+                device: "ATB", // "RPI" is also available
+                refresh_interval_ms: 10000,
+                warning_interval_ms: 1000 * 60 * 5,
+                enable_warning: false,
+                warning: {
+                    CPU_TEMPERATURE: 80,
+                    GPU_TEMPERATURE: 80,
+                    CPU_USAGE: 90,
+                    STORAGE_USED_PERCENT: 80,
+                    MEMORY_USED_PERCENT: 80
+                }
             }
-          },
+        },
         {
             module: "MMM-google-route",
             header: "Route to work",
@@ -142,32 +142,25 @@ var config = {
             classes: "default everyone",
             disabled: false,
             config: {
-              apikey: "e9ea011fbb954b99670e297125a27a84",
-              latitude: "44.3816",
-              longitude: "25.9957",      
-              iconset: "4c",
-              hourlyForecastInterval: 2,
-              maxHourliesToShow:3,
-              maxDailiesToShow:6,
-              concise: true,
-              showCurrentConditions: false,
-              showExtraCurrentConditions: false,
-              showSummary: false,
-              forecastLayout: "tiled"
+                apikey: "e9ea011fbb954b99670e297125a27a84",
+                latitude: "44.3816",
+                longitude: "25.9957",
+                iconset: "4c",
+                hourlyForecastInterval: 2,
+                maxHourliesToShow: 3,
+                maxDailiesToShow: 6,
+                concise: true,
+                showCurrentConditions: false,
+                showExtraCurrentConditions: false,
+                showSummary: false,
+                forecastLayout: "tiled"
             }
-          },
+        },
         {
             module: "MMM-Arduino-Control",
             position: "top_right",
             header: "Home Status"
         },
-        // {
-        //     module: 'MMM-syslog',
-        //     position: 'bottom_left',
-        //     config: {
-        //         max: 5
-        //     }
-        // },
         {
             module: "newsfeed",
             position: "bottom_bar",
