@@ -138,7 +138,6 @@ var config = {
         },
         {
             module: "MMM-DarkSkyForecast",
-            header: "Weather",
             position: "top_right",
             classes: "default everyone",
             disabled: false,
@@ -147,7 +146,13 @@ var config = {
               latitude: "44.3816",
               longitude: "25.9957",      
               iconset: "4c",
-              concise: false,
+              hourlyForecastInterval: 2,
+              maxHourliesToShow:3,
+              maxDailiesToShow:6,
+              concise: true,
+              showCurrentConditions: false,
+              showExtraCurrentConditions: false,
+              showSummary: false,
               forecastLayout: "tiled"
             }
           },
