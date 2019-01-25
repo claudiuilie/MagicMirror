@@ -132,24 +132,20 @@ var config = {
             }
         },
         {
-            module: 'MMM-darksky-hourly',
-            position: 'top_right',
-            config: {
-                apiKey: 'e9ea011fbb954b99670e297125a27a84',
-                latitude: 44.3816,
-                longitude: 25.9957
-            }
-        },
-        {
-            module: "weatherforecast",
+            module: "MMM-DarkSkyForecast",
+            header: "Weather",
             position: "top_right",
-            header: "Weather Forecast",
+            classes: "default everyone",
+            disabled: false,
             config: {
-                location: "Bucharest",
-                locationID: "",
-                appid: "cd86b6b78b174125bfddf3cc26d7105a"
+              apikey: "e9ea011fbb954b99670e297125a27a84",
+              latitude: "44.3816",
+              longitude: "25.9957",      
+              iconset: "4c",
+              concise: false,
+              forecastLayout: "tiled"
             }
-        },
+          },
         {
             module: "MMM-Arduino-Control",
             position: "top_right",
