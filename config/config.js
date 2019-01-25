@@ -72,11 +72,6 @@ var config = {
             },
         },
         {
-            module: "MMM-MovieListings",
-            position: "top_center",
-
-        },
-        {
             module: "clock",
             position: "top_left"
         },
@@ -126,6 +121,11 @@ var config = {
                     destination: "44.489606,26.126148"
                 }
             }
+        },
+        {
+            module: "MMM-MovieListings",
+            position: "top_left",
+
         },
         {
             module: "currentweather",
