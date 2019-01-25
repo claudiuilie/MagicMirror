@@ -27,6 +27,10 @@ var config = {
             module: "alert",
         },
         {
+            module: "MMM-network-signal",
+            position: "top_bar",
+        },
+        {
             module: "updatenotification",
             position: "top_bar",
 
@@ -151,13 +155,13 @@ var config = {
             position: "top_right",
             header: "Home Status"
         },
-        {
-            module: 'MMM-syslog',
-            position: 'bottom_left',
-            config: {
-                max: 5
-            }
-        },
+        // {
+        //     module: 'MMM-syslog',
+        //     position: 'bottom_left',
+        //     config: {
+        //         max: 5
+        //     }
+        // },
         {
             module: "newsfeed",
             position: "bottom_bar",
