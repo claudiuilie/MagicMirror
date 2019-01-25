@@ -2,8 +2,8 @@ Module.register("MMM-google-route", {
     // Module config defaults
     defaults: {
         key: 'apy_key',
-        height: '300px',
-        width: '300px',
+        height: '400px',
+        width: '400px',
         title: '',
         refreshPeriod: 10,
         mapOptions:{},
@@ -183,7 +183,7 @@ Module.register("MMM-google-route", {
                 cell.appendChild(content);
                 tr.appendChild(cell);
             }
-            addCell(tr,"",duration);
+            addCell(tr,"small",duration);
             addCell(tr,"small",distance);
             addCell(tr,"small",summary);
             table.appendChild(tr);

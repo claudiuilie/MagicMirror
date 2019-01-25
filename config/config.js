@@ -117,6 +117,7 @@ var config = {
           },
         {
             module: "MMM-google-route",
+            header: "Route to work",
             position: "top_left",
             config: {
                 key: "AIzaSyBEbAhBQYMul4rmpONye8UNJJsYltbTHXM",
